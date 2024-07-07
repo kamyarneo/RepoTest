@@ -15,3 +15,5 @@
 	cmd = "code --wait --diff $LOCAL $REMOTE"
 
 	Some Options are added to local Repo 
+--------------------------------------------
+Some Changes made in Origin/master Repo
