@@ -1,0 +1,15 @@
+[user]
+	name = Kamyar
+	email = Kamyar.Jazayeri@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gui]
+	recentrepo = D:/gitting
+	recentrepo = D:/clone-gitting
+[diff]
+	tool = winmerge
+[difftool "winmerge"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"

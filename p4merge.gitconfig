@@ -1,0 +1,38 @@
+[user]
+	name = Kamyar
+	email = Kamyar.Jazayeri@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gui]
+	recentrepo = D:/gitting
+
+
+[merge]
+  tool = p4mergetool
+[mergetool "p4mergetool"]
+  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  keepBackup = false
+  keepTemporaries = false
+  trustExitCode = false
+  prompt = false
+
+[merge]
+    tool = P4merge
+
+[mergetool "P4merge"]
+    name = P4merge
+    trustExitCode = true
+    cmd = "c:/Program\\ Files/Perforce/P4merge.exe"  "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+
+[diff]
+    tool = P4merge
+
+[difftool "P4merge"]
+    name = P4merge
+    trustExitCode = true
+    cmd = "c:/Program\\ Files/Perforce/P4merge.exe"  "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+[core]
+	editor = code --w
