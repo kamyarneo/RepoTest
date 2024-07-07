@@ -13,3 +13,5 @@
 	tool = winmerge
 [difftool "winmerge"]
 	cmd = "code --wait --diff $LOCAL $REMOTE"
+
+	Some Options are added to local Repo 
